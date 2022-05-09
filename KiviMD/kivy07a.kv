@@ -1,0 +1,15 @@
+MDBoxLayout:
+    orientation: 'vertical'
+    MDLabel:
+        id: counterLabel
+        text: '0'
+        halign: "center"
+        # pos_hint: {'center_y': .9}
+        theme_text_color: 'Custom'
+        text_color: 0, 0, 0, 1
+    
+    MDFloatingActionButton:
+        icon: "plus"
+        md_bg_color: app.theme_cls.primary_color
+        on_press: app.increase_counter()
+
